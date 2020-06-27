@@ -16,8 +16,15 @@ set noshowmode
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree' 
 
 call plug#end()
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
+
+let mapleader=" "
+
+nmap <Leader>s <Plug>(easymotion-s2)
+nmap <Leader>nt :NERDTreeFind<CR>
